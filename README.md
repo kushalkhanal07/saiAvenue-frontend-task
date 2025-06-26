@@ -14,7 +14,7 @@ I created dynamic scroll using Next.js where number element are rendered one at 
 
 # 1. Clone the project
 
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/kushalkhanal07/saiAvenue-frontend-task.git
 
 # 2. Navigate into the folder
 
@@ -32,11 +32,11 @@ npm run dev
 
 ## Any assumptions or limitations
 
--- Assumptions
+# 1. Assumptions
 ✔️All number generation and rendering logic happens purely on the frontend.
 ✔️User is expected to scroll from top to bottom. Skipping or jumping may disrupt the timing or element generation.
 ✔️The horizontal scroll block (20–30) is a single fixed range and is not reused or repeated.
 
--- Limitations
+# 2. Limitations
 ✔️It is a demo app so mobile responsiveness is not focused, it mainly focuse on desktop app
 ✔️If the user scrolls too fast, the rendering might lag slightly due to the 500ms interval
