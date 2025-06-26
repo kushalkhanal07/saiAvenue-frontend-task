@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Project Name
 
-## Getting Started
+Dynamic scrollable element
 
-First, run the development server:
 
-```bash
+
+## Overview of my approach
+
+I created dynamic scroll using Next.js where number element are rendered one at a time every 500 milliseconds. The scroll starts with vertical numbers from 1 to 20. After that, a horizontal scroll block appears showing numbers from 20 to 30. Once that section is completed, vertical scrolling continues from 31 onwards. I used hooks like useState to update ui based on how data changes and useEffect is triggered whenever the data in the ui is updated. this hooks are used to dynamically load elements when they come into view and to control their timed rendering.
+
+
+
+## Instruction on how to run this project
+
+# 1. Clone the project
+
+git clone https://github.com/your-username/your-repo-name.git
+
+# 2. Navigate into the folder
+
+cd your-repo-name
+
+# 3. Install dependencies
+
+npm install
+
+# 4. Start the development server
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Any assumptions or limitations
 
-## Learn More
+-- Assumptions
+✔️All number generation and rendering logic happens purely on the frontend.
+✔️User is expected to scroll from top to bottom. Skipping or jumping may disrupt the timing or element generation.
+✔️The horizontal scroll block (20–30) is a single fixed range and is not reused or repeated.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+-- Limitations
+✔️It is a demo app so mobile responsiveness is not focused, it mainly focuse on desktop app
+✔️If the user scrolls too fast, the rendering might lag slightly due to the 500ms interval
